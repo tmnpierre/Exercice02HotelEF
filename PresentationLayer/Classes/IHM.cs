@@ -240,9 +240,71 @@
 
     private void GérerRéservations()
     {
-        Console.WriteLine("Gestion des réservations - Implémentation à venir");
-        // Implémentation de la logique de gestion des réservations
+        bool running = true;
+
+        while (running)
+        {
+            Console.Clear();
+            Console.WriteLine("Gestion des réservations");
+            Console.WriteLine("1. Ajouter une réservation");
+            Console.WriteLine("2. Afficher les réservations");
+            Console.WriteLine("3. Modifier une réservation");
+            Console.WriteLine("4. Supprimer une réservation");
+            Console.WriteLine("5. Retour au menu principal");
+            Console.Write("Entrez votre choix: ");
+
+            var choix = Console.ReadLine();
+
+            switch (choix)
+            {
+                case "1":
+                    AjouterRéservation();
+                    break;
+                case "2":
+                    AfficherRéservations();
+                    break;
+                case "3":
+                    ModifierRéservation();
+                    break;
+                case "4":
+                    SupprimerRéservation();
+                    break;
+                case "5":
+                    running = false;
+                    break;
+                default:
+                    Console.WriteLine("Choix invalide. Veuillez réessayer.");
+                    break;
+            }
+
+            if (running)
+            {
+                Console.WriteLine("Appuyez sur une touche pour continuer...");
+                Console.ReadKey();
+            }
+        }
     }
+
+    private void AjouterRéservation()
+    {
+        // Logique pour ajouter une nouvelle réservation
+    }
+
+    private void AfficherRéservations()
+    {
+        // Logique pour afficher la liste des réservations
+    }
+
+    private void ModifierRéservation()
+    {
+        // Logique pour modifier les informations d'une réservation existante
+    }
+
+    private void SupprimerRéservation()
+    {
+        // Logique pour supprimer une réservation
+    }
+
 
     private void GérerHôtel()
     {
