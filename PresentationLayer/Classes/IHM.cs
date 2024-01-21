@@ -321,7 +321,60 @@
 
     private void GérerHôtel()
     {
-        Console.WriteLine("Gestion de l'hôtel - Implémentation à venir");
-        // Implémentation de la logique de gestion de l'hôtel
+        bool running = true;
+
+        while (running)
+        {
+            Console.Clear();
+            Console.WriteLine("Gestion de l'hôtel");
+            Console.WriteLine("1. Afficher le résumé de l'hôtel");
+            Console.WriteLine("2. Gérer les services de l'hôtel");
+            Console.WriteLine("3. Statistiques de l'hôtel");
+            Console.WriteLine("4. Retour au menu principal");
+            Console.Write("Entrez votre choix: ");
+
+            var choix = Console.ReadLine();
+
+            switch (choix)
+            {
+                case "1":
+                    AfficherRésuméHôtel();
+                    break;
+                case "2":
+                    GérerServicesHôtel();
+                    break;
+                case "3":
+                    AfficherStatistiquesHôtel();
+                    break;
+                case "4":
+                    running = false;
+                    break;
+                default:
+                    Console.WriteLine("Choix invalide. Veuillez réessayer.");
+                    break;
+            }
+
+            if (running)
+            {
+                Console.WriteLine("Appuyez sur une touche pour continuer...");
+                Console.ReadKey();
+            }
+        }
     }
+
+    private void AfficherRésuméHôtel()
+    {
+        // Logique pour afficher un résumé de l'hôtel
+    }
+
+    private void GérerServicesHôtel()
+    {
+        // Logique pour gérer les services de l'hôtel
+    }
+
+    private void AfficherStatistiquesHôtel()
+    {
+        // Logique pour afficher les statistiques de l'hôtel
+    }
+
 }
