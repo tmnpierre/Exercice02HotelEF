@@ -364,17 +364,28 @@
 
     private void AfficherRésuméHôtel()
     {
-        // Logique pour afficher un résumé de l'hôtel
+        Console.WriteLine("Résumé de l'Hôtel :");
+        Console.WriteLine("Nombre total de chambres : ...");
+        Console.WriteLine("Nombre de chambres occupées : ...");
+        Console.WriteLine("Nombre de réservations en cours : ...");
     }
+
 
     private void GérerServicesHôtel()
     {
-        // Logique pour gérer les services de l'hôtel
+        Console.WriteLine("Gestion des Services de l'Hôtel");
+        Console.WriteLine("1. Ajouter un service");
+        Console.WriteLine("2. Modifier un service");
+        Console.WriteLine("3. Supprimer un service");
     }
+
 
     private void AfficherStatistiquesHôtel()
     {
-        // Logique pour afficher les statistiques de l'hôtel
+        Console.WriteLine("Statistiques de l'Hôtel :");
+        Console.WriteLine("Taux d'occupation : ...");
+        Console.WriteLine("Revenus moyens par chambre : ...");
     }
+
 
 }
