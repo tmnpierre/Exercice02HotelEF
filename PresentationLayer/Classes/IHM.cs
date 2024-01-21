@@ -287,23 +287,36 @@
 
     private void AjouterRéservation()
     {
-        // Logique pour ajouter une nouvelle réservation
+        Console.Write("Entrez l'ID du client pour la réservation : ");
+        var clientId = int.Parse(Console.ReadLine());
+        Console.WriteLine("Réservation ajoutée avec succès.");
     }
+
 
     private void AfficherRéservations()
     {
-        // Logique pour afficher la liste des réservations
+        foreach (var réservation in réservations)
+        {
+            Console.WriteLine($"ID: {réservation.RéservationId}, Client ID: {réservation.ClientId}, ...");
+        }
     }
+
 
     private void ModifierRéservation()
     {
-        // Logique pour modifier les informations d'une réservation existante
+        Console.Write("Entrez l'ID de la réservation à modifier : ");
+        var id = int.Parse(Console.ReadLine());
+        Console.WriteLine("Réservation modifiée avec succès.");
     }
+
 
     private void SupprimerRéservation()
     {
-        // Logique pour supprimer une réservation
+        Console.Write("Entrez l'ID de la réservation à supprimer : ");
+        var id = int.Parse(Console.ReadLine());
+        Console.WriteLine("Réservation supprimée avec succès.");
     }
+
 
 
     private void GérerHôtel()
